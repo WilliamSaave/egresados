@@ -1,0 +1,25 @@
+<?php
+include_once 'config/database.php';
+include_once 'models/Egresado.php';
+
+class EgresadoController {
+    private $db;
+    private $egresado;
+
+    public function __construct() {
+        $database = new Database();
+        $this->db = $database->getConnection();
+        $this->egresado = new Egresado($this->db);
+    }
+
+    public function index() {
+        $stmt = $this->egresado->obtenerEgresados();
+        $egresados = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        // Usa extract para convertir el array en variables locales
+        extract(['egresados' => $egresados]);
+
+        include 'views/egresados/index.php';
+    }
+}
+?>

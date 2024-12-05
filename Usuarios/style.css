@@ -1,0 +1,140 @@
+/* style.css */
+
+body {
+    margin-top: 20px;
+    width: 100%;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif; /* Mejora la tipografía */
+}
+
+h1 {
+    color: #2d572c;
+    margin-bottom: 20px;
+}
+
+#searchForm {
+    margin-bottom: 20px;
+}
+
+#searchForm input[type="text"] {
+    padding: 10px;
+    width: calc(100% - 22px);
+    border: 1px solid #66CC99;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table thead {
+    background-color: #66CC99;
+    color: #ffffff;
+}
+
+table thead th {
+    padding: 10px;
+    text-align: left;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #e0f2e9;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #c8e6c9;
+}
+
+table tbody td {
+    padding: 10px;
+}
+
+table tbody td a {
+    color: #66CC99;
+    text-decoration: none;
+}
+
+table tbody td a:hover {
+    text-decoration: underline;
+}
+
+.btn-edit {
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #66CC99;
+}
+
+.btn-delete {
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #d9534f;
+}
+
+#userForm {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #66CC99;
+    border-radius: 8px;
+    background-color: #f5f5f5; /* Fondo más claro para el formulario */
+}
+
+#userForm h2 {
+    color: #2d572c;
+}
+
+#userForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#userForm input[type="text"], 
+#userForm input[type="email"], 
+#userForm input[type="password"], 
+#userForm select {
+    width: calc(100% - 22px); /* Ajusta el ancho para padding y borde */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #66CC99;
+    border-radius: 4px;
+    box-sizing: border-box; /* Incluye padding y border en el ancho */
+}
+
+#userForm input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#userForm button {
+    background-color: #66CC99;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#userForm button:hover {
+    background-color: #4CAF50; /* Color verde más oscuro al pasar el ratón */
+}

@@ -1,0 +1,27 @@
+<style>
+        body {
+            margin-top: 25px; 
+        }
+    </style>
+</head>
+<body>
+
+<body>
+<?php include '../Menu/menu.php'; ?>
+
+
+para poner el menu 
+
+footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+            background-color: #007832;
+            color: #fff;
+            border-radius: 5px;
+        }
+        <footer>
+        Si tiene algún problema, escriba a este correo sena@problemas.com
+    </footer>
+
+    para ponerlo al final de todo
